@@ -1,7 +1,4 @@
-surveys:
-    resource: "@SurveysBundle/Resources/config/routing.yml"
+survey:
+    resource: "@SurveyBundle/Resources/config/routing.yml"
     prefix:   /
 
-app:
-    resource: '@AppBundle/Controller/'
-    type: annotation

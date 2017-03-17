@@ -1,9 +1,9 @@
 <?php
 
-namespace AppBundle;
+namespace SurveyBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class AppBundle extends Bundle
+class SurveyBundle extends Bundle
 {
 }

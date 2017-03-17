@@ -1,0 +1,3 @@
+survey_homepage:
+    path:     /surveys
+    defaults: { _controller: SurveyBundle:Surveys:surveys }

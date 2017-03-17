@@ -1,3 +1,0 @@
-surveys_homepage:
-    path:     /
-    defaults: { _controller: SurveysBundle:Default:index }
