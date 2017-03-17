@@ -1,0 +1,3 @@
+admin_homepage:
+    path:     /create-survey
+    defaults: { _controller: AdminBundle:SurveyCreator:surveyCreator }
