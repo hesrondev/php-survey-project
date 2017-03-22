@@ -1,0 +1,20 @@
+{%  extends '::masterQuestionnaire.html.twig' %}
+
+{% block content %}
+
+<div class="jumbotron">
+    <h1>Resultat</h1>
+</div>
+
+<p>
+ vous avez {% if formResultat >1 %} 
+ <span class="label label-success">{{formResultat}}</span>  
+ {% else %} 
+ <span class="label label-danger">{{formResultat}}</span>  {% endif %}
+ bonne(s) reponse (s).
+</p>
+<p>
+Vous pourvez accéder à la correction ici <a href="{{ path('CorrectionQcm' , {'id': 2})}}">Correction</a>
+</p>
+
+{% endblock %}

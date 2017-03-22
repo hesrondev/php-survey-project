@@ -1,0 +1,13 @@
+AcceuilQcm:
+    path:     /Qcm/Acceuil
+    defaults: { _controller: QcmBundle:Acceuil:index }
+
+QuestionnaireQcm:
+    path:     /Qcm/Questionnaire
+    defaults: { _controller: QcmBundle:Questionnaire:index }  
+
+CorrectionQcm:
+    path:     /Qcm/Correction
+    defaults: { _controller: QcmBundle:Correction:index }
+
+

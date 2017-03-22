@@ -1,0 +1,38 @@
+{%  extends '::masterQuestionnaire.html.twig' %}
+
+
+{% block content %}
+
+
+<div class="jumbotron">
+    <h1>Questionnaire</h1>
+</div>
+
+<div class="form-group">
+	<form action="{{ path('QuestionnaireQcm') }}" method="post" >
+
+			<ol>
+				{% for question in form %}
+			    
+			        <li>{{ question.libelle }}
+				        
+				        	{% for chx in question.listeChoix %}
+				        	<div class="radio">
+							  <label><input type="checkbox" name={{chx.id}}>{{ chx.libelle }}</label>
+
+							</div>
+				        		
+				        	{% endfor %}
+				       
+			        </li>	
+			    
+				{% endfor %}
+
+			</ol>
+		
+		<p> <button type="submit">Envoyer</button> </p>
+	</form>
+
+</div>
+
+{% endblock %}
