@@ -1,7 +1,7 @@
-survey:
-    resource: "@SurveyBundle/Resources/config/routing.yml"
+qcm:
+    resource: "@QcmBundle/Resources/config/routing.yml"
     prefix:   /
 
-admin:
-    resource: "@AdminBundle/Resources/config/routing.yml"
-    prefix: /admin
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation

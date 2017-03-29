@@ -1,0 +1,39 @@
+{%  extends '::masterQuestionnaire.html.twig' %}
+{% block content %}
+
+
+<div class="jumbotron">
+    <h1>Acceuil</h1>
+</div>
+
+
+
+
+<div class="container">
+
+	<div>
+		<p>
+			<h4>Bienvenu sur votre QCM, veuillez choisir un theme. </h4></p>
+		</p>
+	</div>
+
+	<div class="form-group">
+		<form action="{{ path('AcceuilQcm') }}" method="post" >
+			<ol>
+				{% for questionnaire in formAcceuil %}
+						<li>
+							<div class="radio">
+								<label><input type="radio" name={{questionnaire.id}}>{{questionnaire.theme}}</label>
+							</div>
+						</li>
+				{% endfor %}
+			</ol>
+
+			<p> <button type="submit">Envoyer</button> </p>
+		</form>
+	</div>
+</div>
+
+
+
+{% endblock %}
